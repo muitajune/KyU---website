@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/style.css">
+    <link rel="stylesheet" href="Assets/mobile.css">
+    <title>Admissions | KyU</title>
+</head>
+
+<body>
+    <div class="nav-control"></div><input type="checkbox" id="check"><label for="check"><img src="Assets/images/corner-down-left.png" id="nav-control" title="Control Navigation bar by clicking here"></label></body></div>
+    <div class="header2"><h2>ADMISSION PAGE</h2></div>
+    <img src="Assets/images/kyu_logo1.png" id="logo">
+    <div class="head"><h2 class="h2">ADMISSION TO KIRINYAGA UNIVERSITY</h2></div>
+    <div class="nav-bar">
+        <ul>
+            <li><a href="home.html" >Home</a></li>
+            <li><a href="Academics.html">Academics</a></li>
+            <li><a href="#" class="active">Admission</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="kirinyaga portal/Academics.html">Courses</a></li>
+
+        </ul>
+    </div>
+  
+    
+    <div class="bootstrap-content">
+    <div class="welcome">Thank you for choosing to join Kirinyaga University below is a sample form for creating your portal details.<br> Once you create your portal enter details as required on the login bootstrap
+        <p style="color:red; font-weight:bold;">Please provide your true details as per the compliance by the Government of Kenya</p>
+    </div>
+    <div class="bootstrap">
+        <div class="marquee">
+            <h3>ALERT</h3>
+            <marquee behavior="scroll" direction="up">
+            <P>Once you submit your details your personnel portal is automatically created. To login navigate to the login page by clicking <l style="font-weight:bolder;">Login</l> button</P></marquee>
+        </div>
+        <p class="btstrp-header"><marquee behavior="scroll" direction="left">PERSONNEL DETAILS FORM - KIRINYAGA UNIVERSITY</marquee></p>
+        <form action="server.php" method="POST" enctype="multipart/form-data">
+            <img src="Assets/images/avatar.png" id="btsrpdp"><br>
+<p>Upload passport size photo</p>
+   
+            <img src="Assets/images/kyu_logo1.png" id="btlogo">
+            <input type="file" required id="file" name="dp" onchange="previewimage()"><br><br>
+
+    <script type="text/javascript">
+        function previewimage() {
+            var oFReader = new FileReader();
+            oFReader.readAsDataURL(document.getElementById("file").files[0]);
+
+            oFReader.onload = function (oFREvent){
+                document.getElementById("btsrpdp").src = oFREvent.target.result;
+            };
+        };
+   
+     </script>
+            <div class="text-zone">
+            <input type="text" placeholder="FULLNAME IN CAPS" required name="fullname"><br><br>
+
+            <input type="text" placeholder="PHONE NUMBER" required name="phone"><br><br>
+
+            <input type="text" placeholder="FULL ADDRESS" required name="address"><br><br>
+
+            <input type="text" placeholder="EMAIL" required name="email"><br><br>
+
+            <p style="font-weight:bolder;">Sponsorship</p>
+            <select name="sponsorship" id="" required>
+                <option>--Select Sponsorship--</option>
+                <option value="Government sponsored">Government Sponsored</option>
+                <option value="Self Sponsored">Self Sponsored</option>
+            </select><br><br>
+
+            <input type="date" placeholder="Date of birth" required name="dob"><br><br>
+
+            <div class="phase2">
+                <select name="gender" id="" required>
+                    <option>--Select Gender--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <br><br>
+
+            <input type="text" placeholder="RELIGION" required name="religion"><br><br>
+
+            <input type="text" placeholder="CITIZENSHIP" required name="citizenship"><br><br>
+
+            <input type="text" placeholder="ID / PASSPORT NUMBER" required name="idpass"><br><br>
+
+            <input type="text" placeholder="DESIRED PASSWORD" required name="password"><br><br>
+
+            <p style="font-weight:bolder;">Select course to enroll<p>
+            <select name="course" id="" required>
+                <option>--Select Course--</option>
+                <option value="Bsc. Forensic Science">Bsc. Forensic Science</option>
+                <option value="Bsc. in Clinical Medicine">Bsc. in Clinical Medicine</option>
+                <option value="Bsc. Community Health & Development">Bsc. Community Health & Development</option>
+                <option value="Bsc. in Health information Management & Informatics">Bsc. in Health information Management & Informatics</option>
+                <option value="Bsc. in Analytical Chemistry">Bsc. in Analytical Chemistry</option>
+                <option value="Bachelor of Science">Bachelor of Science</option>
+                <option value="Bsc. Computer Science">Bsc. Computer Science</option>
+                <option value="Bsc. Actuarial Science">Bsc. Actuarial Science</option>
+                <option value="Bsc. in Information Technology">Bsc. in Information Technology</option>
+                <option value="Bsc. Software Engineering">Bsc. Software Engineering</option>
+                <option value="Bsc. Architecture">Bsc. Architecture</option>
+                <option value="Bsc. Mechanical Engineering">Bsc. Mechanical Engineering</option>
+                <option value="Bsc. Automotive Engineering">Bsc. Automotive Engineering</option>
+                <option value="Bsc. in Electrical Engineering">Bsc. in Electrical Engineering</option>
+                <option value="Bsc. In Fashion and Textile Technology">Bsc. In Fashion and Textile Technology</option>
+                <option value="Bsc. in Interior Design">Bsc. in Interior Design</option>
+                <option value="Bsc. Textile Engineering">Bsc. Textile Engineering</option>
+                <option value="Bsc. Apparel Accessories">Bsc. Apparel Accessories</option>
+                <option value="Bsc. in Fabric Decoration">Bsc. in Fabric Decoration</option>
+                <option value="Bsc. Software Engineering">Bsc. Software Engineering</option>
+                <option value="Bsc. Architecture">Bsc. Architecture</option>
+                <option value="Bsc. Mechanical Engineering">Bsc. Mechanical Engineering</option>
+                <option value="Bsc. Automotive Engineering">Bsc. Automotive Engineering</option>
+                <option value="Bsc. in Electrical Engineering">Bsc. in Electrical Engineering</option>
+            </select>
+            <br><br> 
+            
+            </div>
+            <input type="submit" id="sbmt-btn" name="submit">
+            <a href="login.html" id="login-btn">Login</a>
+            </div>
+          
+        </form>
+    </div>
+    </div>
+
+</body>
+</html>
